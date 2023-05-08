@@ -32,7 +32,7 @@ function Book(){
 
 const Image =() => <img src="https://m.media-amazon.com/images/I/51rvfEAyQwL._SY346_.jpg" alt="the house at the end of the end of the world" />
 const Title =() => <h3>The House at the End of the World</h3>
-const Author =() => <p>Dean Koontz</p>
+const Author =() => <h6 style={{color:'#617d98',fontSize:'0.75rem',marginTop:'0.25rem'}}>Dean Koontz</h6>
 
 
 
