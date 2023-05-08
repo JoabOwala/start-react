@@ -1,11 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+//CSS
+import './index.css'
+
 // Nested Components, React Tools
 
 function Booklist(){
   return (
-    <section>
+    <section className='booklist'>
+    <Book />
+    <Book />
+    <Book />
+    <Book />
+    <Book />
+    <Book />
     <Book />
     </section>
   )
@@ -13,15 +22,15 @@ function Booklist(){
 
 function Book(){
   return (
-    <>
+    <article className='book'>
     <Image />
     <Title />
     <Author />
-    </>
+    </article>
   )
 }
 
-const Image =() => <img src="https://images-na.ssl-images-amazon.com/images/I/A1q4rOnb89L._UX300__PJku-headphones-v1,TopRight,0,-50_AC_UL600_SR600,400_.jpg" alt="the house at the end of the end of the world" />
+const Image =() => <img src="https://m.media-amazon.com/images/I/51rvfEAyQwL._SY346_.jpg" alt="the house at the end of the end of the world" />
 const Title =() => <h3>The House at the End of the World</h3>
 const Author =() => <p>Dean Koontz</p>
 
