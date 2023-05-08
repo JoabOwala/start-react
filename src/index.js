@@ -1,9 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+// JSX Rules
+// return single element
+// div / section / article or Fragment 
+// use camelCase for html attribute
+// className instead of class
+// close every element
+// formatting
+
 function Greeting(){
   return (
-    <div><h4>Hello There</h4></div>
+    <>
+      <h2>Greetings</h2>
+      <li>
+        <a href="#">Hello There</a>
+      </li>
+    
+    </>
   )
 }
 
