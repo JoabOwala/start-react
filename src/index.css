@@ -35,3 +35,9 @@ body{
 .book h3{
  margin-top: 0.5rem;
 }
+
+.book h6{
+ color: #617d98;
+ font-size: 0.75rem;
+ margin-top: 0.25rem;
+}

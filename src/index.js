@@ -4,36 +4,29 @@ import ReactDOM from 'react-dom'
 //CSS
 import './index.css'
 
-// Nested Components, React Tools
+// Setup vars
+const author = 'Dean Koontz'
+const title = 'The House at the End of the World'
+const img = 'https://m.media-amazon.com/images/I/51rvfEAyQwL._SY346_.jpg'
 
 function Booklist(){
   return (
     <section className='booklist'>
     <Book />
-    <Book />
-    <Book />
-    <Book />
-    <Book />
-    <Book />
-    <Book />
     </section>
   )
 }
-
 function Book(){
+
   return (
     <article className='book'>
-    <Image />
-    <Title />
-    <Author />
+    <img src={img} alt={title} />
+    <h3>{title}</h3>
+    <h6>{author.toUpperCase()}</h6>
+    <p>{6+6}</p>
     </article>
   )
 }
-
-const Image =() => <img src="https://m.media-amazon.com/images/I/51rvfEAyQwL._SY346_.jpg" alt="the house at the end of the end of the world" />
-const Title =() => <h3>The House at the End of the World</h3>
-const Author =() => <h6 style={{color:'#617d98',fontSize:'0.75rem',marginTop:'0.25rem'}}>Dean Koontz</h6>
-
 
 
 
