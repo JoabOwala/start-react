@@ -5,25 +5,41 @@ import ReactDOM from 'react-dom'
 import './index.css'
 
 // Setup vars
-const author = 'Dean Koontz'
-const title = 'The House at the End of the World'
-const img = 'https://m.media-amazon.com/images/I/51rvfEAyQwL._SY346_.jpg'
+const firstBook = {
+  img: 'https://m.media-amazon.com/images/I/51rvfEAyQwL._SY346_.jpg',
+  title: 'The House at the End of the World',
+  author: 'Dean Koontz'
+}
 
+const secondBook = {
+  img: 'https://m.media-amazon.com/images/I/51H5F5oixaL._SY346_.jpg',
+  title: 'Quantum Radio',
+  author: 'A.G. Riddle'
+}
 function Booklist(){
   return (
     <section className='booklist'>
-    <Book />
+    <Book 
+    img={firstBook.img} 
+    title={firstBook.title} 
+    author={firstBook.author}
+    />
+    <Book 
+    img={secondBook.img} 
+    title={secondBook.title} 
+    author={secondBook.author}
+    />
     </section>
   )
 }
-function Book(){
 
+function Book(props){
+  const {img, title, author} = props
   return (
     <article className='book'>
-    <img src={img} alt={title} />
+    <img src={img} alt={props.title} />
     <h3>{title}</h3>
-    <h6>{author.toUpperCase()}</h6>
-    <p>{6+6}</p>
+    <h6>{author}</h6>
     </article>
   )
 }
