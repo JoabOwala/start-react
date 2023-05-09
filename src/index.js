@@ -23,7 +23,9 @@ function Booklist(){
     img={firstBook.img} 
     title={firstBook.title} 
     author={firstBook.author}
-    />
+    >
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, hic illum dolorem sint nobis consectetur est. Suscipit necessitatibus asperiores exercitationem!</p>
+    </Book>
     <Book 
     img={secondBook.img} 
     title={secondBook.title} 
@@ -34,11 +36,12 @@ function Booklist(){
 }
 
 function Book(props){
-  const {img, title, author} = props
+  const {img, title, author, children} = props
   return (
     <article className='book'>
     <img src={img} alt={props.title} />
     <h3>{title}</h3>
+    {children}
     <h6>{author}</h6>
     </article>
   )
