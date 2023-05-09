@@ -37,11 +37,11 @@ const books = [
   )
 }
 
-function Book(props){
-  const {img, title, author} = props
+function Book({img, title, author}){
+  // const {img, title, author} = props
   return (
     <article className='book'>
-    <img src={img} alt={props.title} />
+    <img src={img} alt={title} />
     <h3>{title}</h3>
     <h6>{author}</h6>
     </article>
